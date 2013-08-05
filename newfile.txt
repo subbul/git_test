@@ -1,1 +1,5 @@
 Modifying the file in Branch
+
+not staged
+
+removed
