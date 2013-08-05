@@ -6,4 +6,4 @@ Third line
 
 Adding more line in PC
 
-Change in GITHUB Remote
+Change in github Remote
