@@ -42,7 +42,7 @@ Now go to GIT_Hub ( crate a new repository online)
 
 get the HTTPS or SSH ( https://github.com/subbul/git_test.git, git@github.com:subbul/git_test.git)
 
-git remote add git@github.com:subbul/git_test.git
+git remote add  origin git@github.com:subbul/git_test.git
 
 [Check SSH setting in git hub settings for adding any keys]
 git push origin master ( pushing to Origin(thats remote) the master branch which is default created branch)
