@@ -125,3 +125,5 @@ git stash pop ( will do apply and remove the item from stash)
 
 git pages (subbul.github.io, subbul.github.io/project)
 git add -i (prompts for interactive add)
+
+use sub prompt to patch, stage partial hunks/patches (using "s" ), so the same file part of the snippets are staged and remaining are unstaged
