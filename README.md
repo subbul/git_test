@@ -1,54 +1,54 @@
-Git
+# Git
 References:
 
 http://gitref.org/index.html
-
+===============================
 
 mkdir git_training
 
-git init
+`git init`
 
 vi README.md
 
-git status ( suggests git add)
+`git status` ( suggests git add)
 
-git add .
+`git add .`
 
-git status ( newfile: readme.md - staged)
+`git status` ( newfile: readme.md - staged)
 
-git commit -m "First version"
+`git commit -m "First version" `
 
-git log
+`git log`
 
 vi README.md (modify by adding one more line)
 
-git diff ( shows the new line as + with commited or Staged)
+`git diff `( shows the new line as + with commited or Staged)
 
-git add .
+`git add . `
 
 (DO NOT COMMIT YET)
 vi README.md (add third line)
 
-git diff ( shows only third line- as it compares with NOT staged working file OR NOT commited file with last commited)
-git diff --cached ( shows diff between STAGED and last comitted)
+`git diff `( shows only third line- as it compares with NOT staged working file OR NOT commited file with last commited)
+`git diff --cached `( shows diff between STAGED and last comitted)
 
-git diff HEAD ( shows the diff between committed and working copy and staged)
+`git diff HEAD `( shows the diff between committed and working copy and staged)
 
-git commit -a -m "Added two more lines"
+`git commit -a -m "Added two more lines"`
 
-git remote -v ( lists all remore repository)
+`git remote -v `( lists all remore repository)
 
-Now go to GIT_Hub ( crate a new repository online)
+> Now go to GIT_Hub ( crate a new repository online)
 
 get the HTTPS or SSH ( https://github.com/subbul/git_test.git, git@github.com:subbul/git_test.git)
 
 git remote add  origin git@github.com:subbul/git_test.git
 
-[Check SSH setting in git hub settings for adding any keys]
+> [Check SSH setting in git hub settings for adding any keys]
 git push origin master ( pushing to Origin(thats remote) the master branch which is default created branch)
 
 
-Check in Github online. you should be seeing REAME.md pushed
+> Check in Github online. you should be seeing REAME.md pushed
 
 vi README.md (add a line from PC)
 
@@ -68,7 +68,7 @@ git diff FETCH_HEAD ( shows the changes from remote)
 
 git pull origin master ( fetches and merges)
 
-Fetch is to update local and to know what changes and what needs to be taken in(no merge, your local rep history will reflect the changes, but doesn't get the change)
+> Fetch is to update local and to know what changes and what needs to be taken in(no merge, your local rep history will reflect the changes, but doesn't get the change)
 merge then to apply change
 
 
@@ -78,7 +78,7 @@ gitk (GUI shows the commits diffs)
 gitk -all (all branches)
 
 
-Create a newfile.txt in GITHUB onilne
+> Create a newfile.txt in GITHUB onilne
 
 git diff FETCH_HEAD ( shows newfile.txt)
 
@@ -105,7 +105,7 @@ git diff feature_1 newfile.txt ( shows the diff between newfile.txt in "master" 
 git merge feature_1 ( takes the changes from feature_1 to current branch - "master")
 
 
-if a branch, has occured after pt A in master , commits B& C are done in master
+> if a branch, has occured after pt A in master , commits B& C are done in master
 commits B1 & C1 are done in branch.
 Rebase will rewind B &C, apply B1 & C1 and then B & C
 rebase ( pull the individual commits from branch and reapply other commits on main branch)
