@@ -68,6 +68,15 @@ git diff FETCH_HEAD ( shows the changes from remote)
 
 git pull origin master ( fetches and merges)
 
+Fetch is to update local and to know what changes and what needs to be taken in(no merge, your local rep history will reflect the changes, but doesn't get the change)
+merge then to apply change
+
+
+git log --oneline --all --graph -decorate (shows branch data and the head)
+
+gitk (GUI shows the commits diffs)
+gitk -all (all branches)
+
 
 Create a newfile.txt in GITHUB onilne
 
@@ -95,10 +104,16 @@ git diff feature_1 newfile.txt ( shows the diff between newfile.txt in "master" 
 
 git merge feature_1 ( takes the changes from feature_1 to current branch - "master")
 
+
+if a branch, has occured after pt A in master , commits B& C are done in master
+commits B1 & C1 are done in branch.
+Rebase will rewind B &C, apply B1 & C1 and then B & C
+rebase ( pull the individual commits from branch and reapply other commits on main branch)
+Rebase is different from merge as it holds individual commits, rather a single commit alone.
 git push origin master
 
 
-vi newfile.txt ( add "going to modify or put in stash")
+vi newfile.txt ( add "going to modify or put in stash")re
 
 git stash ( current changes to stash a temporary storage and working directory or copy is reverted to cleanslate)
 
