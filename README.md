@@ -122,3 +122,6 @@ git stash list ( lists all the stashed items)
 git stash apply ( resume the copy which was stashed recently..)
 git stash pop ( will do apply and remove the item from stash)
 
+
+git pages (subbul.github.io, subbul.github.io/project)
+git add -i (prompts for interactive add)
