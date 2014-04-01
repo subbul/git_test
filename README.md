@@ -122,11 +122,31 @@ vi newfile.txt ( add "going to modify or put in stash")re
 
 `git stash list `( lists all the stashed items)
 
+`git stash save "message for stashing"`
+
 `git stash apply `( resume the copy which was stashed recently..)
-git stash pop ( will do apply and remove the item from stash)
+or
+`git stash apply stash@{1}` (particular stash number and still the entry will be in stash)
 
+`git stash pop` ( will do apply and remove the item from stash)
 
+`git stash drop` (to clear stash)
 `git pages` (subbul.github.io, subbul.github.io/project)
 `git add -i` (prompts for interactive add)
-
 > use sub prompt to patch, stage partial hunks/patches (using "s" ), so the same file part of the snippets are staged and remaining are unstaged
+
+
+## Config
+vim ~/.gitconfig (Global)
+vim .git/config (project level)
+
+## Git Alias
+`git config --global alias.s status` ( s is short form for 'status')
+## shell alias
+vim ~/.bash_profile ~/.bashrc
+
+`alias ga='git add' `
+`alias gst='git status'`
+`alias gc='git commit'`
+`alias gi='git add -i'`
+`alias gl='git log --oneline --all --graph -decorate'`
