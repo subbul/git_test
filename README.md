@@ -140,6 +140,15 @@ or
 vim ~/.gitconfig (Global)
 vim .git/config (project level)
 
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+
 ## Git Alias
 `git config --global alias.s status` ( s is short form for 'status')
 ## shell alias
